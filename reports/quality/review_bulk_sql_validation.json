@@ -1,0 +1,7 @@
+{
+  "original": "('42000', '[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Cannot obtain the required interface (\"IID_IColumnsInfo\") from OLE DB provider \"BULK\" for linked server \"(null)\". (7301) (SQLExecDirectW)')",
+  "prepared": "PASS",
+  "records": 99224,
+  "all_field_values_match_csv": true,
+  "scope": "Session temp table only; persistent staging unchanged"
+}

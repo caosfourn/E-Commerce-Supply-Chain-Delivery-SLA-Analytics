@@ -1,0 +1,8 @@
+﻿,issue,decision
+0,Thiếu actual/estimated,Giữ đơn; không tính SLA khi thiếu mốc cần thiết
+1,Thời gian âm,Không tính duration của chặng bất thường; không tự sửa timestamp
+2,Nhiều review/đơn,"Chọn review mới nhất theo quy tắc cố định, giữ nguồn gốc"
+3,Nhiều item/payment,Gộp riêng trước JOIN; không tính KPI đơn trên item rows
+4,Thiếu category/bản dịch,Fallback category gốc rồi unknown
+5,Outlier hợp lệ,Giữ; báo median/P90 song song mean
+6,Cohort cuối snapshot,Kiểm tra sensitivity khi bỏ tháng cuối

@@ -1,0 +1,11 @@
+﻿,value
+total_orders,99092.0
+delivered_orders,96211.0
+sla_eligible_orders,96203.0
+excluded_delivered_orders,8.0
+late_orders,6531.0
+on_time_rate,0.932112304190098
+delivery_sample,96203.0
+mean_delivery_days,12.538460850026432
+median_delivery_days,10.209988425925927
+p90_delivery_days,23.06388194444445

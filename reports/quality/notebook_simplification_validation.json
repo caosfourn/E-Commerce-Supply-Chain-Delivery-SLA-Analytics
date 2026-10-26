@@ -1,0 +1,30 @@
+{
+  "scope": "Synthetic mart rows and notebook cell execution; no Jupyter kernel or live SQL validation",
+  "live_sql_status": "Unavailable: localhost connection failed inside and outside sandbox",
+  "notebooks": [
+    {
+      "file": "01_data_quality_eda.ipynb",
+      "status": "PASS",
+      "code_cells": 4
+    },
+    {
+      "file": "02_delivery_analysis.ipynb",
+      "status": "PASS",
+      "code_cells": 7
+    },
+    {
+      "file": "03_customer_experience.ipynb",
+      "status": "PASS",
+      "code_cells": 6
+    }
+  ],
+  "checks": [
+    "one row per order",
+    "stage sample size",
+    "money aggregation",
+    "review coverage",
+    "retention counts",
+    "rank-biserial direction"
+  ],
+  "sql_data_modified": false
+}

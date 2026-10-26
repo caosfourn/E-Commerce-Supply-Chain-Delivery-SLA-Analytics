@@ -1,0 +1,31 @@
+﻿check_id,severity,failed_rows,action,status,source
+customers.null_keys,FATAL,0,Sửa khóa trước JOIN,PASS,csv
+customers.duplicate_keys,FATAL,0,Sửa khóa trước JOIN,PASS,csv
+orders.null_keys,FATAL,0,Sửa khóa trước JOIN,PASS,csv
+orders.duplicate_keys,FATAL,0,Sửa khóa trước JOIN,PASS,csv
+order_items.null_keys,FATAL,0,Sửa khóa trước JOIN,PASS,csv
+order_items.duplicate_keys,FATAL,0,Sửa khóa trước JOIN,PASS,csv
+order_payments.null_keys,FATAL,0,Sửa khóa trước JOIN,PASS,csv
+order_payments.duplicate_keys,FATAL,0,Sửa khóa trước JOIN,PASS,csv
+products.null_keys,FATAL,0,Sửa khóa trước JOIN,PASS,csv
+products.duplicate_keys,FATAL,0,Sửa khóa trước JOIN,PASS,csv
+sellers.null_keys,FATAL,0,Sửa khóa trước JOIN,PASS,csv
+sellers.duplicate_keys,FATAL,0,Sửa khóa trước JOIN,PASS,csv
+category_translation.null_keys,FATAL,0,Sửa khóa trước JOIN,PASS,csv
+category_translation.duplicate_keys,FATAL,0,Sửa khóa trước JOIN,PASS,csv
+orders.customer,FATAL,0,Sửa quan hệ trước JOIN,PASS,csv
+items.order,FATAL,0,Sửa quan hệ trước JOIN,PASS,csv
+items.product,FATAL,0,Sửa quan hệ trước JOIN,PASS,csv
+items.seller,FATAL,0,Sửa quan hệ trước JOIN,PASS,csv
+payments.order,FATAL,0,Sửa quan hệ trước JOIN,PASS,csv
+reviews.order,FATAL,0,Sửa quan hệ trước JOIN,PASS,csv
+delivered_without_date,WARN,8,Xem quy tắc loại theo KPI trong data_quality.md,WARN,csv
+non_delivered_with_date,WARN,6,Xem quy tắc loại theo KPI trong data_quality.md,WARN,csv
+actual_before_purchase,WARN,0,Xem quy tắc loại theo KPI trong data_quality.md,PASS,csv
+actual_before_carrier,WARN,23,Xem quy tắc loại theo KPI trong data_quality.md,WARN,csv
+approval_before_purchase,WARN,0,Xem quy tắc loại theo KPI trong data_quality.md,PASS,csv
+carrier_before_approval,WARN,1359,Xem quy tắc loại theo KPI trong data_quality.md,WARN,csv
+invalid_item_money,FATAL,0,Xem quy tắc loại theo KPI trong data_quality.md,PASS,csv
+invalid_payment_money,FATAL,0,Xem quy tắc loại theo KPI trong data_quality.md,PASS,csv
+invalid_review_score,FATAL,0,Xem quy tắc loại theo KPI trong data_quality.md,PASS,csv
+invalid_coordinates,WARN,0,Xem quy tắc loại theo KPI trong data_quality.md,PASS,csv

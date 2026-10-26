@@ -1,0 +1,19 @@
+{
+  "source": "csv",
+  "tables": [
+    "retention_90d",
+    "distance_routes",
+    "distance_correlation",
+    "priority_states",
+    "priority_categories",
+    "priority_sellers",
+    "priority_routes",
+    "sensitivity",
+    "review_test",
+    "review_strata",
+    "stages",
+    "context"
+  ],
+  "status": "PASS",
+  "sql_runtime_verified": false
+}

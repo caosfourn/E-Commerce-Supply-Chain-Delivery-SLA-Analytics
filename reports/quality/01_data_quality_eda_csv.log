@@ -1,0 +1,252 @@
+Nguồn: csv | Database: CSV raw
+Cohort mặc định: [2017-01-01, 2018-09-01) theo ngày mua
+                         rows  columns  memory_mb
+table                                            
+orders                  99441        8     24.655
+customers               99441        5     30.949
+order_items            112650        7     29.866
+order_payments         103886        5     16.527
+order_reviews           99224        7     31.204
+products                32951        9      6.530
+sellers                  3095        4      0.724
+category_translation       71        2      0.009
+geolocation           1000163        5    175.164
+                           order_id                       customer_id  \
+0  e481f51cbdc54678b7cc49136f2d6af7  9ef432eb6251297304e76186b10a928d   
+1  53cdb2fc8bc7dce0b6741e2150273451  b0830fb4747a6c6d20dea0b8c802d7ef   
+2  47770eb9100c2d0c44946d9cf07ec65d  41ce2a54c0b03bf3443c3d931a367089   
+
+  order_status order_purchase_timestamp   order_approved_at  \
+0    delivered      2017-10-02 10:56:33 2017-10-02 11:07:15   
+1    delivered      2018-07-24 20:41:37 2018-07-26 03:24:27   
+2    delivered      2018-08-08 08:38:49 2018-08-08 08:55:23   
+
+  order_delivered_carrier_date order_delivered_customer_date  \
+0          2017-10-04 19:55:00           2017-10-10 21:25:13   
+1          2018-07-26 14:31:00           2018-08-07 15:27:45   
+2          2018-08-08 13:50:00           2018-08-17 18:06:29   
+
+  order_estimated_delivery_date  
+0                    2017-10-18  
+1                    2018-08-13  
+2                    2018-09-04  
+                                        dtype
+order_id                       string[python]
+customer_id                    string[python]
+order_status                   string[python]
+order_purchase_timestamp       datetime64[ns]
+order_approved_at              datetime64[ns]
+order_delivered_carrier_date   datetime64[ns]
+order_delivered_customer_date  datetime64[ns]
+order_estimated_delivery_date  datetime64[ns]
+                                               key  null_keys  duplicate_keys
+table                                                                        
+customers                              customer_id          0               0
+orders                                    order_id          0               0
+order_items                order_id, order_item_id          0               0
+order_payments        order_id, payment_sequential          0               0
+products                                product_id          0               0
+sellers                                  seller_id          0               0
+category_translation         product_category_name          0               0
+Review ID trùng: 814
+Đơn có nhiều review: 547
+ZIP có nhiều dòng: 17972
+            table                         column  missing_rows  missing_rate
+28  order_reviews           review_comment_title         87656         0.883
+29  order_reviews         review_comment_message         58247         0.587
+6          orders  order_delivered_customer_date          2965         0.030
+34       products            product_name_length           610         0.019
+33       products          product_category_name           610         0.019
+35       products     product_description_length           610         0.019
+36       products             product_photos_qty           610         0.019
+5          orders   order_delivered_carrier_date          1783         0.018
+4          orders              order_approved_at           160         0.002
+37       products               product_weight_g             2         0.000
+38       products              product_length_cm             2         0.000
+39       products              product_height_cm             2         0.000
+40       products               product_width_cm             2         0.000
+              order_approved_at  order_delivered_carrier_date  \
+order_status                                                    
+approved                  0.000                         1.000   
+canceled                  0.226                         0.880   
+created                   1.000                         1.000   
+delivered                 0.000                         0.000   
+invoiced                  0.000                         1.000   
+processing                0.000                         1.000   
+shipped                   0.000                         0.000   
+unavailable               0.000                         1.000   
+
+              order_delivered_customer_date  order_estimated_delivery_date  
+order_status                                                                
+approved                              1.000                          0.000  
+canceled                              0.990                          0.000  
+created                               1.000                          0.000  
+delivered                             0.000                          0.000  
+invoiced                              1.000                          0.000  
+processing                            1.000                          0.000  
+shipped                               1.000                          0.000  
+unavailable                           1.000                          0.000  
+                 orphan_rows
+relation                    
+orders.customer            0
+items.order                0
+items.product              0
+items.seller               0
+payments.order             0
+reviews.order              0
+                         orders
+orders_without_items        775
+orders_without_payments       1
+orders_without_reviews      768
+                          rows
+delivered_without_date       8
+non_delivered_with_date      6
+actual_before_purchase       0
+actual_before_carrier       23
+approval_before_purchase     0
+carrier_before_approval   1359
+invalid_item_money           0
+invalid_payment_money        0
+invalid_review_score         0
+invalid_coordinates          0
+                               order_id order_status  \
+6437   a1abeb653a4d4cd1e142ccb8c82cd069    delivered   
+9553   383aa8b2724fe452d9ccd9934a8c628b    delivered   
+13487  cb1134f9010d242e9515ad1c78ec0c39    delivered   
+14474  dceb62e8fa94b46006c9554fed743df0    delivered   
+19268  5f9d46795c3126674e52becb3a1a517f    delivered   
+21338  8c78d01de3a9009e23d6877a7cc9be20    delivered   
+22520  b27af682321527a6349f1761eb3f360c    delivered   
+25393  1cc3ae63caffff2d6c3ee3e78e074acf    delivered   
+25646  e37f11cae9985ca58f0b56f268720537    delivered   
+27470  fa3e37584f4fdb1ded0e0de700dfcb4e    delivered   
+
+      order_delivered_carrier_date order_delivered_customer_date  
+6437           2017-07-28 16:57:58           2017-07-25 19:32:56  
+9553           2017-07-07 17:22:41           2017-07-06 14:27:51  
+13487          2017-07-20 19:22:02           2017-07-19 14:13:28  
+14474          2017-08-01 18:23:30           2017-07-26 18:09:10  
+19268          2017-07-20 23:03:42           2017-07-20 18:52:41  
+21338          2016-10-26 11:41:53           2016-10-25 17:51:46  
+22520          2017-06-27 14:51:54           2017-06-26 15:45:35  
+25393          2017-08-10 18:28:56           2017-08-10 18:05:38  
+25646          2017-08-01 18:17:47           2017-07-31 17:49:56  
+27470          2017-08-09 18:18:43           2017-08-01 21:13:01  
+              orders
+order_status        
+delivered      96478
+shipped         1107
+canceled         625
+unavailable      609
+invoiced         314
+processing       301
+created            5
+approved           2
+         orders
+2016-09       4
+2016-10     324
+2016-11       0
+2016-12       1
+2017-01     800
+2017-02    1780
+2017-03    2682
+2017-04    2404
+2017-05    3700
+2017-06    3245
+2017-07    4026
+2017-08    4331
+2017-09    4285
+2017-10    4631
+2017-11    7544
+2017-12    5673
+2018-01    7269
+2018-02    6728
+2018-03    7211
+2018-04    6939
+2018-05    6873
+2018-06    6167
+2018-07    6292
+2018-08    6512
+2018-09      16
+2018-10       4
+            price  freight_value
+count 112,650.000    112,650.000
+mean      120.654         19.990
+std       183.634         15.806
+min         0.850          0.000
+50%        74.990         16.260
+90%       229.800         34.041
+99%       890.000         84.520
+max     6,735.000        409.680
+       product_weight_g  product_length_cm  product_height_cm  \
+count        32,949.000         32,949.000         32,949.000   
+mean          2,276.472             30.815             16.938   
+std           4,282.039             16.914             13.638   
+min               0.000              7.000              2.000   
+50%             700.000             25.000             13.000   
+90%           6,300.000             53.000             33.000   
+99%          22,538.000            100.000             69.000   
+max          40,425.000            105.000            105.000   
+
+       product_width_cm  
+count        32,949.000  
+mean             23.197  
+std              12.079  
+min               6.000  
+50%              20.000  
+90%              40.000  
+99%              63.000  
+max             118.000  
+       delivery_days  approval_hours  handoff_days  transit_days
+count     96,470.000      99,281.000    96,285.000    96,281.000
+mean          12.558          10.419         2.859         9.335
+std            9.546          26.038         3.499         8.747
+min            0.533           0.000         0.000         0.000
+50%           10.217           0.343         1.852         7.101
+90%           23.096          34.660         6.030        18.908
+99%           46.050          90.166        17.207        40.989
+max          209.629       4,509.181       125.763       205.191
+orders_compared                  98665
+mismatch_over_001_brl              303
+missing_item_or_payment_total      776
+dtype: int64
+                                   price  freight_value  payment_value  \
+order_id                                                                 
+262118ce178bb3e4590a3adcf6d62e6b 119.800         57.940        126.120   
+fd33085945f15975375cd8ec85440511 217.990         16.630        212.820   
+6e57e23ecac1ae881286657694444267 330.000         20.410        333.910   
+4154bf1348caac78152fe76e3e9c4af8 149.900         15.360        150.270   
+6dcf0aeb8b1eb4021c26e1d0e9394979 299.000         34.920        318.970   
+0e556f5eafbf3eb399290101b183b10e  49.800         45.860         81.900   
+8092da256aefda13b330290d2ca86521 103.900         11.750        105.260   
+aa6bd33ba1853d846d3085a88ae37083  19.900         15.240         25.140   
+4387477eec4b3c89b39f3f454940d059 198.000         33.920        222.020   
+c6f6cbb3c845593222d5c594bb69c5fd  89.900         23.430        104.340   
+
+                                  gross_value  delta_brl  
+order_id                                                  
+262118ce178bb3e4590a3adcf6d62e6b      177.740    -51.620  
+fd33085945f15975375cd8ec85440511      234.620    -21.800  
+6e57e23ecac1ae881286657694444267      350.410    -16.500  
+4154bf1348caac78152fe76e3e9c4af8      165.260    -14.990  
+6dcf0aeb8b1eb4021c26e1d0e9394979      333.920    -14.950  
+0e556f5eafbf3eb399290101b183b10e       95.660    -13.760  
+8092da256aefda13b330290d2ca86521      115.650    -10.390  
+aa6bd33ba1853d846d3085a88ae37083       35.140    -10.000  
+4387477eec4b3c89b39f3f454940d059      231.920     -9.900  
+c6f6cbb3c845593222d5c594bb69c5fd      113.330     -8.990  
+                     value
+all_orders           99441
+cohort_orders        99092
+delivered_orders     96211
+sla_eligible_orders  96203
+late_orders           6531
+                     issue                                           decision
+0   Thiếu actual/estimated    Giữ đơn; không tính SLA khi thiếu mốc cần thiết
+1             Thời gian âm  Không tính duration của chặng bất thường; khôn...
+2         Nhiều review/đơn  Chọn review mới nhất theo quy tắc cố định, giữ...
+3       Nhiều item/payment  Gộp riêng trước JOIN; không tính KPI đơn trên ...
+4  Thiếu category/bản dịch                  Fallback category gốc rồi unknown
+5           Outlier hợp lệ                 Giữ; báo median/P90 song song mean
+6     Cohort cuối snapshot             Kiểm tra sensitivity khi bỏ tháng cuối
+Đã xuất: D:\HuynhHan\E-Commerce_Supply_Chain&Delivery_SLA_Analytics\reports\notebooks\01_data_quality_eda\csv

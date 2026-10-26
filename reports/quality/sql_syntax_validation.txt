@@ -1,0 +1,25 @@
+PASS 00_create_database_schemas.sql
+PASS 01_create_stg_tables.sql
+PASS 02_load_stg_bulk_insert.sql
+PASS 03_profile_data_quality.sql
+PASS 04_build_clean_layer.sql
+PASS 05_build_dim_tables.sql
+PASS 06_build_fact_tables.sql
+PASS 07_create_mart_views.sql
+PASS 08_validation_checks.sql
+PASS a1_context_overview.sql
+PASS a2_priority_segments.sql
+PASS a3_first_order_retention.sql
+PASS a4_logistics_review.sql
+PASS a5_seller_routes.sql
+PASS a6_payment_appendix.sql
+PASS a7_distance_driver.sql
+PASS a8_sensitivity_checks.sql
+PASS 01_schema.sql
+PASS 02_load_data.sql
+PASS 03_quality_checks.sql
+PASS 01_overview.sql
+PASS 02_delivery_sla.sql
+PASS 03_seller_routes.sql
+PASS 04_reviews.sql
+PASS dynamic BULK INSERT template

@@ -1,0 +1,29 @@
+{
+  "scope": "Code cells executed top-to-bottom on local CSVs; no SQL Server execution.",
+  "results": [
+    {
+      "notebook": "01_data_quality_eda.ipynb",
+      "source": "csv",
+      "status": "PASS",
+      "code_cells": 12
+    },
+    {
+      "notebook": "02_delivery_analysis.ipynb",
+      "source": "csv",
+      "status": "PASS",
+      "code_cells": 10,
+      "total_orders": 99092,
+      "sla_eligible_orders": 96203,
+      "late_orders": 6531
+    },
+    {
+      "notebook": "03_customer_experience.ipynb",
+      "source": "csv",
+      "status": "PASS",
+      "code_cells": 9,
+      "low_review_gap_pp": 53.1535038375585
+    }
+  ],
+  "sla_boundary_checks": "PASS: same-day, next-day, missing estimate, non-delivered, negative duration",
+  "sql_connection": "localhost unavailable; needs user instance configuration"
+}

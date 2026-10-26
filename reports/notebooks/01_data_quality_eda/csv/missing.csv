@@ -1,0 +1,14 @@
+﻿,table,column,missing_rows,missing_rate
+28,order_reviews,review_comment_title,87656,0.8834153027493349
+29,order_reviews,review_comment_message,58247,0.5870253164556962
+6,orders,order_delivered_customer_date,2965,0.02981667521444877
+34,products,product_name_length,610,0.018512336499651
+33,products,product_category_name,610,0.018512336499651
+35,products,product_description_length,610,0.018512336499651
+36,products,product_photos_qty,610,0.018512336499651
+5,orders,order_delivered_carrier_date,1783,0.017930229985619613
+4,orders,order_approved_at,160,0.0016089942780140988
+37,products,product_weight_g,2,6.069618524475737e-05
+38,products,product_length_cm,2,6.069618524475737e-05
+39,products,product_height_cm,2,6.069618524475737e-05
+40,products,product_width_cm,2,6.069618524475737e-05

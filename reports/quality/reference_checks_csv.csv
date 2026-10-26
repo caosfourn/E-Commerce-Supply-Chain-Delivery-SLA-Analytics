@@ -1,0 +1,17 @@
+﻿metric,csv_reference,observed,delta,source,status
+total_orders,99092.0,99092.0,0.0,csv,PASS
+delivered_orders,96211.0,96211.0,0.0,csv,PASS
+sla_eligible_orders,96203.0,96203.0,0.0,csv,PASS
+late_orders,6531.0,6531.0,0.0,csv,PASS
+all_source_merchandise_brl,13591643.7,13591643.7,0.0,csv,PASS
+all_source_freight_brl,2251909.54,2251909.54,0.0,csv,PASS
+all_source_payment_brl,16008872.12,16008872.12,0.0,csv,PASS
+rows.orders,99441.0,99441.0,0.0,csv,PASS
+rows.customers,99441.0,99441.0,0.0,csv,PASS
+rows.order_items,112650.0,112650.0,0.0,csv,PASS
+rows.order_payments,103886.0,103886.0,0.0,csv,PASS
+rows.order_reviews,99224.0,99224.0,0.0,csv,PASS
+rows.products,32951.0,32951.0,0.0,csv,PASS
+rows.sellers,3095.0,3095.0,0.0,csv,PASS
+rows.category_translation,71.0,71.0,0.0,csv,PASS
+rows.geolocation,1000163.0,1000163.0,0.0,csv,PASS

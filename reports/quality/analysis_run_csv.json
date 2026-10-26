@@ -1,0 +1,55 @@
+{
+  "started_utc": "2026-10-23T08:04:14.412929+00:00",
+  "source": "csv",
+  "execution": "sequential Python code cells; not a Jupyter kernel",
+  "sql_write_operations": false,
+  "notebooks": [
+    {
+      "file": "01_data_quality_eda.ipynb",
+      "code_cells": 12,
+      "status": "PASS"
+    },
+    {
+      "file": "02_delivery_analysis.ipynb",
+      "code_cells": 11,
+      "status": "PASS"
+    },
+    {
+      "file": "03_customer_experience.ipynb",
+      "code_cells": 10,
+      "status": "PASS"
+    }
+  ],
+  "versions": {
+    "pandas": "2.3.3",
+    "numpy": "2.4.4",
+    "matplotlib": "3.10.9",
+    "nbformat": "5.10.4"
+  },
+  "inputs_sha256": {
+    "olist_customers_dataset.csv": "983a422239e1712ded753b3bf9ecf47dc73f144d306029dcfa99e70a226883d2",
+    "olist_geolocation_dataset.csv": "b514f6fc991b9566aeba02aa5d67e2c3630f034b60a0e05aa0d082a3b66d88d6",
+    "olist_order_items_dataset.csv": "0bc4d068c4fe38cbb01bd90e8746e3c613fe7b4baef75fab7b0e329701c3e279",
+    "olist_order_payments_dataset.csv": "4f713964f2815dbbaa40b9488268c55aac3627bfce5aa96cf58d1f3616de3cc0",
+    "olist_order_reviews_dataset.csv": "012b61c7593e34f51fa614efdf802b9c7056ce6aae5307ddb93236e7cfc797d7",
+    "olist_orders_dataset.csv": "8df58ef3d2d7e9944010f7beecd9b75367f5588ec6e3c91cec19ae3345ef9ecf",
+    "olist_products_dataset.csv": "3e6569628a17fbc75fd206ee357b59e20364b9afa90f5b6cd5b4d624c58aa9cc",
+    "olist_sellers_dataset.csv": "1f643d2b950373b85735e7794b20986f528d7a000432e7c6f9bcbb44d0846a0e",
+    "product_category_name_translation.csv": "a81f0d1f27b27e7293f761bc79e3ce8f348ee39c4b3ed3e49bde38f478586278"
+  },
+  "code_sha256": {
+    "notebooks\\01_data_quality_eda.ipynb": "9d2ecd6fce6cdd7565e8a5bb7ee3648d77e882c3b4eef60df018b63a4154821f",
+    "notebooks\\02_delivery_analysis.ipynb": "8823e67b1131ca8b6bec38c3e20dab09c544dd474879c8dc6e2b8e1574700489",
+    "notebooks\\03_customer_experience.ipynb": "a09fb03ee434cb0ce878ab257d339dc5b6a1899f589f63b5c6aa4d8fda59c520",
+    "notebooks\\olist_helpers.py": "040e78186be6c68153047b1c66f2c56429da17f388c92761c50df91d105c5c5f",
+    "scripts\\extended_analysis.py": "c9c7a2cfce6e9a6998280432795008eae5b943bcb9f482e2e598f89089279af1",
+    "scripts\\profile_raw.py": "642c9c7dfaa053a9682ae58363de91ae9c04b3f4a9cf5862d4cee7a651fc87c0",
+    "scripts\\publish_case_study.py": "f40f44a9640c72d0a3450237dc2643bbdd6f8d916730839315442899af0116d7",
+    "scripts\\render_case_study.py": "366521546f169269e4cf58c1f14ccdb93f33464b58af795b43302a98369d50aa",
+    "scripts\\run_analysis.py": "e4e6388c4f7841d7993fd88327735aeb6d09b331b919bb3a0242afc5c652b975",
+    "scripts\\validate_project.py": "e06c5025a477d2a5434490769b85cf32fd5b5c71e72ef7a1165b0a628372cc82",
+    "scripts\\write_reports.py": "d7d9a61a8c5e1cef486478446d73a195e71737fdce221c11a3fb14f1a4a24e41"
+  },
+  "status": "PASS",
+  "finished_utc": "2026-10-23T08:04:52.179911+00:00"
+}

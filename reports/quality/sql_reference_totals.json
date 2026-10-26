@@ -1,0 +1,36 @@
+{
+  "scope": "Independent local CSV validation and control totals; not SQL Server execution.",
+  "source_counts": {
+    "customers": 99441,
+    "sellers": 3095,
+    "products": 32951,
+    "category_translation": 71,
+    "geolocation": 1000163,
+    "orders": 99441,
+    "order_items": 112650,
+    "order_payments": 103886,
+    "order_reviews": 99224
+  },
+  "loader_validation_errors": {},
+  "all_source_merchandise_brl": "13591643.70",
+  "all_source_freight_brl": "2251909.54",
+  "all_source_payment_brl": "16008872.12",
+  "all_orders": {
+    "total_orders": 99441,
+    "delivered_orders": 96478,
+    "sla_eligible_orders": 96470,
+    "late_orders": 6534,
+    "delivered_merchandise_brl": "13221498.11",
+    "delivered_freight_brl": "2198275.64",
+    "aov_eligible_orders": 96478
+  },
+  "default_cohort_2017_01_to_2018_08": {
+    "total_orders": 99092,
+    "delivered_orders": 96211,
+    "sla_eligible_orders": 96203,
+    "late_orders": 6531,
+    "delivered_merchandise_brl": "13181027.13",
+    "delivered_freight_brl": "2192092.88",
+    "aov_eligible_orders": 96211
+  }
+}

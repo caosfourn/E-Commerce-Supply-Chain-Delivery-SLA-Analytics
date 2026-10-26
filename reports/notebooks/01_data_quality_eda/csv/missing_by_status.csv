@@ -1,0 +1,9 @@
+﻿order_status,order_approved_at,order_delivered_carrier_date,order_delivered_customer_date,order_estimated_delivery_date
+approved,0.0,1.0,1.0,0.0
+canceled,0.2256,0.88,0.9904,0.0
+created,1.0,1.0,1.0,0.0
+delivered,0.00014511080246273761,2.0730114637533945e-05,8.292045855013578e-05,0.0
+invoiced,0.0,1.0,1.0,0.0
+processing,0.0,1.0,1.0,0.0
+shipped,0.0,0.0,1.0,0.0
+unavailable,0.0,1.0,1.0,0.0

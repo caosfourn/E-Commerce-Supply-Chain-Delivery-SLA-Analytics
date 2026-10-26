@@ -1,0 +1,7 @@
+﻿relation,orphan_rows
+orders.customer,0
+items.order,0
+items.product,0
+items.seller,0
+payments.order,0
+reviews.order,0

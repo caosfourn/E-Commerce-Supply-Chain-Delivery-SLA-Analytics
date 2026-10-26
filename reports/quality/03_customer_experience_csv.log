@@ -1,0 +1,264 @@
+Nguồn: csv | Database: CSV raw
+Cohort mặc định: [2017-01-01, 2018-09-01) theo ngày mua
+Đơn có nhiều review: 547
+Selected review score không hợp lệ: 0
+                           order_id delivery_group  review_score
+0  e481f51cbdc54678b7cc49136f2d6af7        on_time             4
+1  53cdb2fc8bc7dce0b6741e2150273451        on_time             4
+2  47770eb9100c2d0c44946d9cf07ec65d        on_time             5
+3  949d5b44dbf5de918fe9c16f97b45f8a        on_time             5
+4  ad21c59c0840e6cb83a9ceb5573f8159        on_time             5
+                  orders  reviewed_orders  low_reviews  mean_score  \
+delivery_group                                                       
+not_eligible        2889             2770         2155       1.753   
+on_time            89672            89182         8248       4.291   
+late_1_3_days       1869             1851          595       3.291   
+late_4_7_days       1802             1748         1182       2.105   
+late_over_7_days    2860             2779         2203       1.696   
+
+                  review_coverage  low_review_rate  
+delivery_group                                      
+not_eligible                0.959            0.778  
+on_time                     0.995            0.092  
+late_1_3_days               0.990            0.321  
+late_4_7_days               0.970            0.676  
+late_over_7_days            0.972            0.793  
+          orders  reviewed_orders  low_reviews  mean_score  review_coverage  \
+delivery                                                                      
+on_time    89672            89182         8248       4.291            0.995   
+late        6531             6378         3980       2.271            0.977   
+
+          low_review_rate  
+delivery                   
+on_time             0.092  
+late                0.624  
+Chênh lệch low-review rate (late − on-time): 53.15 điểm phần trăm
+                     orders  reviewed_orders  low_reviews  mean_score  \
+order_month is_late                                                     
+2017-01-01  0.000       728              720           74       4.264   
+            1.000        22               21           15       1.952   
+2017-02-01  0.000      1604             1601          153       4.257   
+            1.000        49               42           29       2.143   
+2017-03-01  0.000      2430             2414          218       4.271   
+            1.000       116              113           66       2.389   
+2017-04-01  0.000      2152             2143          209       4.251   
+            1.000       151              147           86       2.476   
+2017-05-01  0.000      3439             3418          305       4.279   
+            1.000       106               99           49       2.737   
+2017-06-01  0.000      3040             3019          282       4.277   
+            1.000        95               92           52       2.435   
+2017-07-01  0.000      3764             3737          317       4.314   
+            1.000       108              105           66       2.248   
+2017-08-01  0.000      4071             4044          327       4.363   
+            1.000       122              121           64       2.653   
+2017-09-01  0.000      3968             3941          328       4.343   
+            1.000       182              177           94       2.593   
+2017-10-01  0.000      4291             4267          395       4.274   
+            1.000       187              179           97       2.547   
+2017-11-01  0.000      6384             6350          625       4.239   
+            1.000       904              887          574       2.195   
+2017-12-01  0.000      5102             5060          514       4.245   
+            1.000       411              401          274       2.115   
+2018-01-01  0.000      6666             6617          683       4.234   
+            1.000       403              396          278       2.013   
+2018-02-01  0.000      5629             5595          600       4.202   
+            1.000       926              912          661       1.911   
+2018-03-01  0.000      5675             5652          594       4.212   
+            1.000      1328             1296          878       2.069   
+2018-04-01  0.000      6492             6455          610       4.297   
+            1.000       306              297          186       2.232   
+2018-05-01  0.000      6306             6285          519       4.339   
+            1.000       443              437          204       2.757   
+2018-06-01  0.000      6025             6001          563       4.331   
+            1.000        71               71           43       2.310   
+2018-07-01  0.000      5948             5918          492       4.370   
+            1.000       208              200          100       2.755   
+2018-08-01  0.000      5958             5945          440       4.395   
+            1.000       393              385          164       2.995   
+
+                     review_coverage  low_review_rate  
+order_month is_late                                    
+2017-01-01  0.000              0.989            0.103  
+            1.000              0.955            0.714  
+2017-02-01  0.000              0.998            0.096  
+            1.000              0.857            0.690  
+2017-03-01  0.000              0.993            0.090  
+            1.000              0.974            0.584  
+2017-04-01  0.000              0.996            0.098  
+            1.000              0.974            0.585  
+2017-05-01  0.000              0.994            0.089  
+            1.000              0.934            0.495  
+2017-06-01  0.000              0.993            0.093  
+            1.000              0.968            0.565  
+2017-07-01  0.000              0.993            0.085  
+            1.000              0.972            0.629  
+2017-08-01  0.000              0.993            0.081  
+            1.000              0.992            0.529  
+2017-09-01  0.000              0.993            0.083  
+            1.000              0.973            0.531  
+2017-10-01  0.000              0.994            0.093  
+            1.000              0.957            0.542  
+2017-11-01  0.000              0.995            0.098  
+            1.000              0.981            0.647  
+2017-12-01  0.000              0.992            0.102  
+            1.000              0.976            0.683  
+2018-01-01  0.000              0.993            0.103  
+            1.000              0.983            0.702  
+2018-02-01  0.000              0.994            0.107  
+            1.000              0.985            0.725  
+2018-03-01  0.000              0.996            0.105  
+            1.000              0.976            0.677  
+2018-04-01  0.000              0.994            0.095  
+            1.000              0.971            0.626  
+2018-05-01  0.000              0.997            0.083  
+            1.000              0.986            0.467  
+2018-06-01  0.000              0.996            0.094  
+            1.000              1.000            0.606  
+2018-07-01  0.000              0.995            0.083  
+            1.000              0.962            0.500  
+2018-08-01  0.000              0.998            0.074  
+            1.000              0.980            0.426  
+                                 on_time  late  gap_pp
+category_en                                           
+audio                              0.145 0.775  62.979
+musical_instruments                0.070 0.696  62.588
+toys                               0.077 0.677  60.002
+baby                               0.097 0.673  57.578
+sports_leisure                     0.077 0.649  57.223
+construction_tools_construction    0.093 0.654  56.106
+stationery                         0.064 0.623  55.915
+unknown                            0.135 0.690  55.484
+fashion_bags_accessories           0.070 0.624  55.384
+cool_stuff                         0.080 0.634  55.370
+perfumery                          0.082 0.635  55.325
+luggage_accessories                0.059 0.605  54.601
+garden_tools                       0.087 0.629  54.151
+food                               0.064 0.600  53.596
+health_beauty                      0.074 0.609  53.406
+                        orders  reviewed_orders  low_reviews  mean_score  \
+customer_state is_late                                                     
+AC             0.000        77               77           10       4.182   
+AL             0.000       311              311           29       4.299   
+               1.000        85               82           55       2.134   
+AM             0.000       141              140           16       4.307   
+AP             0.000        65               64            4       4.234   
+BA             0.000      2857             2842          318       4.143   
+               1.000       396              384          231       2.349   
+CE             0.000      1097             1093           99       4.242   
+               1.000       176              174          119       2.040   
+DF             0.000      1956             1946          187       4.265   
+               1.000       118              118           85       1.975   
+ES             0.000      1778             1761          157       4.261   
+               1.000       214              205          115       2.512   
+GO             0.000      1822             1815          178       4.231   
+               1.000       128              124           79       2.202   
+MA             0.000       588              587           63       4.172   
+               1.000       125              122           79       2.180   
+MG             0.000     10800            10746         1020       4.280   
+               1.000       519              505          298       2.360   
+MS             0.000       633              631           52       4.363   
+
+                        review_coverage  low_review_rate  
+customer_state is_late                                    
+AC             0.000              1.000            0.130  
+AL             0.000              1.000            0.093  
+               1.000              0.965            0.671  
+AM             0.000              0.993            0.114  
+AP             0.000              0.985            0.062  
+BA             0.000              0.995            0.112  
+               1.000              0.970            0.602  
+CE             0.000              0.996            0.091  
+               1.000              0.989            0.684  
+DF             0.000              0.995            0.096  
+               1.000              1.000            0.720  
+ES             0.000              0.990            0.089  
+               1.000              0.958            0.561  
+GO             0.000              0.996            0.098  
+               1.000              0.969            0.637  
+MA             0.000              0.998            0.107  
+               1.000              0.976            0.648  
+MG             0.000              0.995            0.095  
+               1.000              0.973            0.590  
+MS             0.000              0.997            0.082  
+         reviewed_orders  available_review_dates  reviews_before_delivery_day
+is_late                                                                      
+0.000              89182                   89182                          212
+1.000               6378                    6378                         4748
+         orders  reviewed_orders  low_reviews  mean_score  review_coverage  \
+is_late                                                                      
+0.000     88970            88970         8209       4.292            1.000   
+1.000      1630             1630          409       3.526            1.000   
+
+         low_review_rate  
+is_late                   
+0.000              0.092  
+1.000              0.251  
+So sánh trên đây đổi population: chỉ review tạo cùng/sau ngày giao. Không thay thế kết quả chính.
+Đã xuất: D:\HuynhHan\E-Commerce_Supply_Chain&Delivery_SLA_Analytics\reports\notebooks\03_customer_experience\csv
+   late_n  on_time_n  mann_whitney_u  p_value  \
+0    1630      88970  50,514,715.000    0.000   
+
+   rank_biserial_late_minus_on_time  
+0                            -0.303  
+                    scenario  is_late  eligible_orders  reviews  \
+0                       main    0.000            89672    88970   
+1                       main    1.000             6531     1630   
+2             exclude_august    0.000            83714    83026   
+3             exclude_august    1.000             6138     1452   
+4          all_review_timing    0.000            89672    89182   
+5          all_review_timing    1.000             6531     6378   
+6  exclude_duration_outliers    0.000            89670    88968   
+7  exclude_duration_outliers    1.000             6230     1629   
+
+   low_review_rate  late_rate  median_days  p90_days  
+0            0.092      0.068       10.210    23.064  
+1            0.251      0.068       10.210    23.064  
+2            0.094      0.068       10.616    23.608  
+3            0.262      0.068       10.616    23.608  
+4            0.092      0.068       10.210    23.064  
+5            0.624      0.068       10.210    23.064  
+6            0.092      0.065       10.190    22.860  
+7            0.251      0.065       10.190    22.860  
+                   category_en customer_state  is_late  reviews  \
+0   agro_industry_and_commerce             AP    0.000        1   
+1   agro_industry_and_commerce             BA    0.000        3   
+2   agro_industry_and_commerce             CE    0.000        2   
+3   agro_industry_and_commerce             ES    0.000        1   
+4   agro_industry_and_commerce             ES    1.000        1   
+5   agro_industry_and_commerce             GO    0.000        5   
+6   agro_industry_and_commerce             MG    0.000       14   
+7   agro_industry_and_commerce             MS    0.000        3   
+8   agro_industry_and_commerce             MT    0.000        2   
+9   agro_industry_and_commerce             PA    0.000        2   
+10  agro_industry_and_commerce             PB    0.000        1   
+11  agro_industry_and_commerce             PE    0.000        4   
+12  agro_industry_and_commerce             PI    0.000        3   
+13  agro_industry_and_commerce             PR    0.000       11   
+14  agro_industry_and_commerce             PR    1.000        1   
+15  agro_industry_and_commerce             RJ    0.000       21   
+16  agro_industry_and_commerce             RJ    1.000        1   
+17  agro_industry_and_commerce             RO    0.000        1   
+18  agro_industry_and_commerce             RS    0.000        9   
+19  agro_industry_and_commerce             SC    0.000        3   
+
+    low_review_rate  
+0             0.000  
+1             0.333  
+2             0.000  
+3             0.000  
+4             1.000  
+5             0.200  
+6             0.071  
+7             0.000  
+8             0.000  
+9             0.000  
+10            0.000  
+11            0.000  
+12            0.000  
+13            0.182  
+14            0.000  
+15            0.048  
+16            1.000  
+17            0.000  
+18            0.000  
+19            0.000  
